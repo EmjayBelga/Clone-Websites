@@ -1,0 +1,130 @@
+.header{
+    font-family: var(--ff-primary);
+    background-color: transparent;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.header__nav-bg{
+    background-color: rgba(24, 24, 27, 0.5);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.header__nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: var(--size-5xl);
+}
+.header__nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.header__nav-menu li:first-child a{
+    color: var(--clr-yellow);
+}
+.header__nav-link{
+    color: var(--clr-light);
+    font-size: var(--size-xl);
+}
+.header__nav-link:hover{
+    color: var(--clr-yellow);
+    transition: 0.3s;
+    text-shadow: 0 0 30px var(--clr-yellow);
+}
+.header__bars{
+    display: none;
+}
+
+
+.header.nav-scroll{
+    padding-top: 0; 
+    padding-bottom: 0;
+}
+.header__nav-bg.nav-scroll{
+    background-color: var(--clr-grey-bg);
+    box-shadow: 0px 4px 10px 0px var(--clr-grey);
+    border-radius: 0px 0px 10px 10px;
+}
+.header__nav-link.nav-scroll{
+    color: var(--clr-dark);
+}
+
+
+/* xl */
+@media (max-width: 1280px) {
+    .header__logo{
+        font-size: var(--size-4xl);
+    }
+    .header__nav-link{
+        font-size: var(--size-lg);
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .header__logo{
+        font-size: var(--size-3xl);
+    }
+    .header__nav-menu{
+        gap: 1.5em;
+    }
+    .header__nav-link{
+        font-size: var(--size-sm);
+    }
+    
+
+}
+
+/* md */
+@media (max-width: 768px) {
+    .header__logo{
+        font-size: var(--size-2xl);
+    }
+    .header__nav-menu{
+        gap: 1em;
+    }
+    .header__nav-link{
+        font-size: var(--size-xs);
+    }
+
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .header__logo{
+        font-size: var(--size-4xl);
+        z-index: 1;
+    }
+    .header__nav-menu{
+        display: none;
+    }
+    .header__nav-link{
+        font-size: var(--size-lg);
+    }
+    .header__bars{
+        display: block;
+        color: var(--clr-yellow);
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+        position: relative;
+        z-index: 9999;
+    }
+    
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .header__logo{
+        text-align: center;
+        font-size: var(--size-3xl);
+    }
+}

@@ -1,0 +1,131 @@
+#about{
+    background-color: var(--clr-light);
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
+.about__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.about__top-title{
+    font-size: var(--size-xl);
+}
+.about__title{
+    font-size: var(--size-4xl);
+    margin-bottom: 2.5rem;
+}
+.about__description{
+    color: var(--clr-grey);
+    font-size: var(--size-base);
+    max-width: 60ch;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.about__btn{
+    background-color: var(--clr-yellow);
+    font-size: var(--size-xs);
+}
+.about__btn:hover{
+    background-color: var(--clr-grey);
+    transition: 0.3s;
+}
+.about__img1{
+    display: none;
+}
+.about__img2-wrapper{
+    margin: auto 0;
+}
+
+
+/* xl */
+@media (max-width: 1280px) {
+    .about__description{
+        font-size: var(--size-sm);
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .about__content{
+        gap: 1.5em;
+    }
+    .about__top-title{
+        font-size: var(--size-lg);
+    }
+    .about__title{
+        font-size: var(--size-2xl);
+        margin-bottom: 2rem;
+    }
+    .about__description{
+        margin-bottom: 1.5rem;
+    }
+    .about__btn{
+        font-size: var(--size-btn);
+    }
+       
+}
+
+/* md */
+@media (max-width: 768px) {
+    .about__content{
+        gap: 1em;
+    }
+    .about__top-title{
+        font-size: var(--size-base);
+    }
+    .about__title{
+        font-size: var(--size-xl);
+        margin-bottom: 1.5rem;
+    }
+    .about__description{
+        font-size: var(--size-xs);
+        margin-bottom: 1rem;
+    }
+    .about__btn{
+        font-size: var(--size-xxs);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    #about{
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .about__content{
+        display: flex;
+        flex-direction: column;
+    }
+    .about__top-title{
+        font-size: var(--size-lg);
+        text-align: center;
+    }
+    .about__title{
+        font-size: var(--size-3xl);
+        text-align: center;
+    }
+    .about__description{
+        font-size: var(--size-sm);
+        margin-bottom: 1.5rem;
+    }
+    .about__btn{
+        font-size: var(--size-btn);
+    }
+    .about__img1{
+        display: block;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .about__img2{
+        display: none;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .about__top-title{
+        font-size: var(--size-base);
+    }
+}
+

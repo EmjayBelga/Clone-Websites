@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Acctax clone website" />
+    <meta name="keywords" content="html, css, js, tailwind" />
+    <title>AccTax-Clone</title>
+  </head>
+  <body>
+    <header class="bg-clr-white border border-b-clr-gray/25 py-[1rem] sticky top-0 w-[100%] z-[99999]">
+      <div class="container 
+        lg:flex lg:justify-between lg:items-center">
+        <div class="flex justify-between items-center">
+          <img 
+            src="./images/logo.jpg" 
+            alt="Logo" />
+          <button aria-label="mobile nav button" class="header__bars relative z-[9999] lg:hidden">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="w-9 h-9">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+
+        <nav>
+          <ul class="nav__menu">
+            <li>
+              <a class="nav__link text-clr-primary-blue" href="#home">HOME</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#about">ABOUT US</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#services">SERVICES</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#clients">CLIENTS</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#resources">RESOURCES</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#careers">CAREERS</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#contact">CONTACT US</a>
+            </li>
+            <div aria-label="contact number" class="flex items-center mt-[0.5rem] lg:mt-0">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" 
+                fill="currentColor" 
+                class="w-7 h-7 mr-4 fill-clr-primary-blue 
+                  lg:mr-1 lg:w-6 lg:h-6">
+                <path 
+                  fill-rule="evenodd" 
+                  d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-sm text-clr-secondary-blue 
+                  lg:text-[0.6rem]">CALL US TODAY!</span>
+                <a href="#" class="text-xl text-clr-primary-blue font-[600] 
+                  lg:text-base">04 123 4567</a>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="bg-hero-bg bg-image py-[8rem] lg:py-[10rem]">
+        <div class="container text-clr-white lg:flex justify-between">
+          <div class="container-2">
+            <h4>PRACTICAL ACCOUNTING AND TAX ADVICES</h4>
+            <h1 class="text-4xl font-[800] leading-[2.5rem] my-[1rem] max-w-[100%]
+              sm:text-5xl sm:leading-[2.8rem] sm:max-w-[20ch]
+              xl:text-6xl">Providing Businesses Growth and Productivity</h1>
+            <p class="mt-[3rem] mb-[2rem]">Lorem ipsum dolor sit amet, consectutor adipsicing elit sed do eiussmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mimim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequat.</p>
+            <button class="btn-1 text-xs underline underline-offset-[6px] mb-[1rem] mr-[1rem] hover:bg-clr-primary-blue 
+            focus:bg-clr-primary-blue focus:no-underline duration-300 ease-in-out
+              xl:text-base ">LEARN MORE</button>
+            <button class="btn-1 text-xs underline underline-offset-[6px] mb-[1rem] mr-[1rem] hover:bg-clr-primary-blue 
+            focus:bg-clr-primary-blue focus:no-underline duration-300 ease-in-out
+              xl:text-base">CONTACT US</button>
+          </div>
+          
+          <div class="flex justify-end items-center relative top-[100px]
+            lg:pr-0 lg:top-[250px] lg:[writing-mode:vertical-lr] lg:flex-row-reverse">
+            <span class="text-sm mr-[1.3rem] tracking-[1px]
+              lg:text-base lg:rotate-180 lg:mr-0 lg:mt-[1.3rem]">FOLLOW US</span>
+            <div class="flex items-center justify-center
+              lg:gap-[0.8rem]">
+              <a aria-label="facebook icon link" href="#" class="icons fill-clr-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" 
+                  height="1em" 
+                  viewBox="0 0 320 512">
+                  <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                </svg>
+              <a aria-label="twitter icon link" href="#" class="icons fill-clr-white">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  height="1em" 
+                  viewBox="0 0 512 512">
+                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                </svg>
+              </a>
+              <a aria-label="linkedin icon link" href="#" class="icons fill-clr-white">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  height="1em" 
+                  viewBox="0 0 448 512">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                </svg>
+              </a>
+              <a aria-label="google plus icon link" href="#" class="icons fill-clr-white">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  height="1em" 
+                  viewBox="0 0 640 512">
+                  <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section> 
+        
+      <section id="about" class="bg-section2-bg bg-image py-[5rem]">
+        <div class="container">
+          <div class="container-2">
+            <div class="flex flex-col
+              lg:flex-row lg:gap-[3rem] ">
+              <div>
+                <h4 class="text-clr-primary-blue">PRACTICAL ACCOUNTING AND TAX ADVICES</h4>
+                <h2 class="max-w-[30ch]">Lorem Ipsum Proin Gravida Nibh vel Velit Auctor Aliquet.</h2>
+                <p class="my-[2rem] text-clr-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <button aria-label="about-us btn" class="btn-2 text-xs inline-flex items-center gap-[0.5rem] cursor-pointer hover:translate-x-4 duration-300
+                  xs:text-sm xl:text-base">ABOUT US
+                  <svg 
+                    class="fill-clr-primary-blue"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 448 512">
+                    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                  </svg>
+                </button>
+              </div>
+      
+              <aside>
+                <div class="bg-clr-primary-blue text-clr-white py-[3rem] px-[2rem] w-[100%] my-[3rem]
+                  lg:my-0">
+                  <h5 class="text-sm tracking-[3px]
+                    xs:text-base xl:text-lg">MISSION</h5>
+                  <p class="xs:my-[1.5rem] my-[1rem]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h5 class="text-sm tracking-[3px] mt-[3.5rem]
+                    xs:text-base xl:text-lg">VISION</h5>
+                  <p class="xs:my-[1.5rem] my-[1rem]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </aside>
+            </div>
+    
+            <div id="clients" class="lg:mt-[3rem] flex justify-center items-center flex-wrap">
+              <div class="card-1">
+                <a href="#">
+                  <h3 class="xs:text-5xl text-4xl">250+</h3>
+                  <span class="xs:text-lg text-base text-clr-primary-blue">Consultants</span>
+                </a>
+              </div>
+              <div class="card-1">
+                <a href="#">
+                  <h3 class="xs:text-5xl text-4xl">430+</h3>
+                  <span class="xs:text-lg text-base text-clr-primary-blue">Projects Done</span>
+                </a>
+              </div>
+              <div class="card-1">
+                <a href="#">
+                  <h3 class="xs:text-5xl text-4xl">750+</h3>
+                  <span class="xs:text-lg text-base text-clr-primary-blue">Happy Clients</span>
+                </a>
+              </div>
+              <div class="card-1">
+                <a href="#">
+                  <h3 class="xs:text-5xl text-4xl">10+</h3>
+                  <span class="xs:text-lg text-base text-clr-primary-blue">Global Offices</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="services" class="bg-clr-secondary-blue py-[5rem]">
+        <div class="container">
+          <div class="container-2">
+            <div class="flex flex-col justify-center items-center text-center text-clr-white">
+              <h4>INDUSTRY STANDARD VISION</h4>
+              <h2>Industry Expertise</h2>
+              <p class="xs:my-[3rem] my-[2rem] text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="grid gap-2 text-lg text-clr-white
+              xs:text-xl sm:grid-cols-2 lg:grid-cols-4 xl:text-2xl">
+              <div class="card-2 hover:stroke-clr-primary-blue">
+                <a aria-label="business registration link" href="#">
+                  <svg 
+                    class="icon-stroke stroke-clr-white"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                  </svg>
+                  <h3>Business Registration</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="product registration link" href="#">
+                  <svg
+                    class="icon-stroke stroke-clr-white" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+                  <h3>Product Registration</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="tax incentives link" href="#">
+                  <svg
+                    class="icon-fill fill-clr-white" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 384 512">
+                  <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 80c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm128 72c8.8 0 16 7.2 16 16v17.3c8.5 1.2 16.7 3.1 24.1 5.1c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-11.1-3-22-5.2-32.1-5.3c-8.4-.1-17.4 1.8-23.6 5.5c-5.7 3.4-8.1 7.3-8.1 12.8c0 3.7 1.3 6.5 7.3 10.1c6.9 4.1 16.6 7.1 29.2 10.9l.5 .1 0 0 0 0c11.3 3.4 25.3 7.6 36.3 14.6c12.1 7.6 22.4 19.7 22.7 38.2c.3 19.3-9.6 33.3-22.9 41.6c-7.7 4.8-16.4 7.6-25.1 9.1V440c0 8.8-7.2 16-16 16s-16-7.2-16-16V422.2c-11.2-2.1-21.7-5.7-30.9-8.9l0 0c-2.1-.7-4.2-1.4-6.2-2.1c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c2.5 .8 4.8 1.6 7.1 2.4l0 0 0 0 0 0c13.6 4.6 24.6 8.4 36.3 8.7c9.1 .3 17.9-1.7 23.7-5.3c5.1-3.2 7.9-7.3 7.8-14c-.1-4.6-1.8-7.8-7.7-11.6c-6.8-4.3-16.5-7.4-29-11.2l-1.6-.5 0 0c-11-3.3-24.3-7.3-34.8-13.7c-12-7.2-22.6-18.9-22.7-37.3c-.1-19.4 10.8-32.8 23.8-40.5c7.5-4.4 15.8-7.2 24.1-8.7V232c0-8.8 7.2-16 16-16z"/>
+                  </svg>
+                  <h3>Tax Incentives</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="recruitment link" href="#">
+                  <svg
+                    class="icon-fill fill-clr-white" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 640 512">
+                    <path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/>
+                  </svg>
+                  <h3>Recruitment</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="executive search link" href="#">
+                  <svg
+                    class="icon-fill fill-clr-white"  
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 512 512">
+                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                  </svg>
+                  <h3>Executive Search</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="payroll link" href="#">
+                  <svg
+                    class="icon-fill fill-clr-white"  
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 576 512">
+                    <path d="M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/>
+                  </svg>
+                  <h3>Payroll</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="hr consulting link" href="#">
+                  <svg
+                    class="icon-fill fill-clr-white"  
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 640 512">
+                    <path d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"/>
+                  </svg>
+                  <h3>HR Consulting</h3>
+                </a>
+              </div>
+              <div class="card-2">
+                <a aria-label="visa processing link" href="#">
+                  <svg 
+                    class="icon-fill fill-clr-white" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 448 512">
+                    <path d="M0 64C0 28.7 28.7 0 64 0H384c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM183 278.8c-27.9-13.2-48.4-39.4-53.7-70.8h39.1c1.6 30.4 7.7 53.8 14.6 70.8zm41.3 9.2l-.3 0-.3 0c-2.4-3.5-5.7-8.9-9.1-16.5c-6-13.6-12.4-34.3-14.2-63.5h47.1c-1.8 29.2-8.1 49.9-14.2 63.5c-3.4 7.6-6.7 13-9.1 16.5zm40.7-9.2c6.8-17.1 12.9-40.4 14.6-70.8h39.1c-5.3 31.4-25.8 57.6-53.7 70.8zM279.6 176c-1.6-30.4-7.7-53.8-14.6-70.8c27.9 13.2 48.4 39.4 53.7 70.8H279.6zM223.7 96l.3 0 .3 0c2.4 3.5 5.7 8.9 9.1 16.5c6 13.6 12.4 34.3 14.2 63.5H200.5c1.8-29.2 8.1-49.9 14.2-63.5c3.4-7.6 6.7-13 9.1-16.5zM183 105.2c-6.8 17.1-12.9 40.4-14.6 70.8H129.3c5.3-31.4 25.8-57.6 53.7-70.8zM352 192A128 128 0 1 0 96 192a128 128 0 1 0 256 0zM112 384c-8.8 0-16 7.2-16 16s7.2 16 16 16H336c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"/>
+                  </svg>
+                  <h3>Visa Processing</h3>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>  
+      </section>
+
+       <section id="careers" class="bg-clr-white py-[5rem]">
+        <div class="container xl:pr-0">
+          <div class="container-2
+            xl:pl-[7rem] xl:pr-0 xl:flex xl:gap-[2rem]">
+            <div>
+              <h4 class="text-clr-primary-blue">PRACTICAL ACCOUNTING ANG TAX ADVICES</h4>
+              <h2 class="max-w-[40ch]">Free Consulation With Our Teams</h2>
+              <img 
+                class="my-[1rem] xl:hidden"
+                src="./images/section4-pic.jpg" 
+                alt="Corporate Man" />
+              <p class="mt-[1.5rem] max-w-[100%] xl:max-w-[55ch]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <ul class="flex flex-col gap-[0.5em] my-[1rem]">
+                <li class="team__li text-sm xs:text-base xl:text-lg">Business Consultants to discuss registration</li>
+                <li class="team__li text-sm xs:text-base xl:text-lg">HR Consultants to discuss salary structure & HR services</li>
+                <li class="team__li text-sm xs:text-base xl:text-lg">Recruiters to discuss human capital needs</li>
+                <li class="team__li text-sm xs:text-base xl:text-lg">Visa Consultants to discuss visa and work permit options</li>
+                <li class="team__li text-sm xs:text-base xl:text-lg">Certified Payroll Professionals to discuss payroll processing</li>
+                <li class="team__li text-sm xs:text-base xl:text-lg">Real Estate Consultants to discuss office space options</li>
+              </ul>
+              
+                <button aria-label="contact-us btn" class="btn-2 text-xs inline-flex items-center gap-[0.5rem] mt-[0.5rem] cursor-pointer hover:translate-x-4 duration-300
+                  xs:text-sm xl:text-base">CONTACT US
+                  <svg 
+                    class="fill-clr-primary-blue"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="1em" 
+                    viewBox="0 0 448 512">
+                    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                  </svg>
+                </button>
+            </div>
+            <img 
+              class="hidden 
+              lg:w-[50%]
+              xl:block xl:justify-end xl:h-[100%] xl:my-0"
+              src="./images/section4-pic.jpg" 
+              alt="Corporate Man" />
+          </div>
+
+          <div class="container-2 flex items-center justify-evenly flex-wrap gap-[1.5rem] mt-[3.5rem]
+            lg:gap-[1rem]">
+            <img class="h-[50px] w-[75px] lg:h-[100%] lg:w-[80px]" src="./images/maersk-line.jpg" alt="Maersk Line" />
+            <img class="h-[50px] w-[75px] lg:h-[100%] lg:w-[130px]" src="./images/royal.jpg" alt="RoyalCaribbean International" />
+            <img class="h-[50px] w-[75px] lg:h-[100%] lg:w-[130px]" src="./images/meralco.jpg" alt="Meralco" />
+            <img class="h-[50px] w-[75px] lg:h-[100%] lg:w-[130px]" src="./images/aes.jpg" alt="AES" />
+            <img class="h-[50px] w-[75px] lg:h-[100%] lg:w-[130px]" src="./images/flyspace.jpg" alt="FlySpaces" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-section5-bg bg-image py-[7rem]">
+        <div class="container">
+          <div class="container-2 text-clr-white text-center flex flex-col justify-center items-center">
+            <h2 class="md:max-w-[20ch]">Invest in Your Success with AccTax Consulting.</h2>
+            <p class="my-[2rem] text-center md:max-w-[60ch]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="text-sm btn-1 bg-clr-white text-clr-primary-blue hover:-translate-y-4 hover:font-[600] duration-300 ease-in-out
+              xs:text-base">CONTACT US TODAY</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="py-[3rem]">
+        <div class="container">
+          <div class="container-2">
+            <div class="flex flex-col items-center justify-center text-center gap-y-[1rem]
+              md:grid md:grid-cols-[10%_30%_10%_40%] md:text-start md:items-start
+               xl:gap-x-5">
+              
+              <img 
+                src="/images/logo.jpg" 
+                alt="Logo" 
+                class="md:place-self-center md:col-span-4
+                xl:place-self-start xl:col-span-2" /> 
+              <h5 class="font-[600] hidden
+                xl:block xl:self-center">QUICK LINKS</h5>
+              <h5 class="font-[600] hidden
+                xl:block xl:self-center">SERVICES</h5>
+                
+              <div class="md:grid md:grid-cols-[20%_80%] md:col-span-4
+                xl:col-span-2">
+                <div class="md:grid md:grid-rows-[50%_20%_20%] md:gap-[0.5rem]">
+                  <h5 class="hidden font-[600] text-base
+                    md:block">VISIT US:</h5>
+                  <h5 class="hidden font-[600] text-base
+                    md:block">PHONE:</h5>
+                  <h5 class="hidden font-[600] text-base
+                    md:block">EMAIL:</h5>
+                </div>
+                
+                <div class="md:grid md:grid-rows-[50%_20%_20%] md:gap-[0.5rem]">
+                  <h5 class="font-[600] text-sm
+                    xs:text-base
+                    md:hidden">VISIT US:</h5>
+                  <p class="text-sm text-clr-gray text-center mt-[0.5rem] font-[500] hover:text-clr-primary-blue
+                    xs:text-base
+                    md:text-start md:mt-0">10-A Net Lima Centre 5th Avenue Corner 26th Street Bonifacio Global City Taguig, 1634 Philippines</p>
+                  <h5 class="font-[600] text-sm mt-[1rem]
+                    xs:text-base
+                    md:hidden">PHONE:</h5>
+                  <p class="text-sm text-clr-gray text-center mt-[0.5rem] font-[500] hover:text-clr-primary-blue
+                    xs:text-base
+                    md:text-start md:mt-0">04 123 4567</p>
+                  <h5 class="font-[600] text-sm mt-[1rem]
+                    xs:text-base
+                    md:hidden">EMAIL:</h5>
+                  <p class="text-sm text-clr-gray text-center mt-[0.5rem] font-[500] hover:text-clr-primary-blue
+                    xs:text-base
+                    md:text-start md:mt-0">info@acctaxph.com</p>
+                </div>
+              </div>
+
+              <ul class="quick_links_services text-sm hidden
+                xs:text-base xl:block">
+                <h5 class="font-[600]
+                  md:my-[1rem]
+                  xl:hidden">QUICK LINKS</h5>
+                  <li>
+                    <a href="#about">About Us</a></li>
+                  <li>
+                    <a href="#clients">Clients</a></li>
+                  <li>
+                    <a href="#resources">Resources</a></li>
+                  <li>
+                    <a href="#careers">Careers</a></li>
+                  <li>
+                    <a href="#contact">Contact Us</a></li>
+              </ul>
+
+              <div class="text-sm
+                xs:text-base md:flex md:gap-[2rem]
+                xl:gap-0">
+                <ul class="quick_links_services hidden
+                  xl:flex-1 xl:block">
+                  <h5 class="font-[600]
+                    md:my-[1rem]
+                    xl:hidden">SERVICES</h5>
+                  <li>Business Registration</li>
+                  <li>Product Registration</li>
+                  <li>Tax Incentives</li>
+                  <li>Recruitment</li>
+                </ul>
+                <ul class="quick_links_services hidden 
+                  xl:flex-1 xl:block">
+                  <li class="md:mt-[3.4rem]
+                    xl:mt-0">Executive Search</li>
+                  <li class="">Payroll</li>
+                  <li class="">HR Consulting</li>
+                  <li class="">Visa Processing</li>
+                </ul>
+              </div>
+
+              <div class="md:flex md:justify-between md:mt-[1rem] md:col-span-4
+                xl:hidden">
+                <ul class="quick_links_services text-sm
+                  xs:text-base">
+                  <h5 class="font-[600] md:my-[1rem]">QUICK LINKS</h5>
+                  <li>
+                    <a href="#about">About Us</a></li>
+                  <li>
+                    <a href="#clients">Clients</a></li>
+                  <li>
+                    <a href="#resources">Resources</a></li>
+                  <li>
+                    <a href="#careers">Careers</a></li>
+                  <li>
+                    <a href="#contact">Contact Us</a></li>
+                </ul>
+                
+                <div class="text-sm
+                  xs:text-base
+                  md:flex md:gap-[2rem]">
+                  <ul class="quick_links_services">
+                    <h5 class="font-[600] md:my-[1rem]">SERVICES</h5>
+                    <li>Business Registration</li>
+                    <li>Product Registration</li>
+                    <li>Tax Incentives</li>
+                    <li>Recruitment</li>
+                  </ul>
+                  <ul class="quick_links_services">
+                    <li class="md:mt-[3.4rem]">Executive Search</li>
+                    <li>Payroll</li>
+                    <li>HR Consulting</li>
+                    <li>Visa Processing</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-[2rem]">
+      <div class="container">
+        <div class="container-2 flex flex-col justify-center items-center
+          md:flex-row md:justify-between">
+          <p class="text-xs text-clr-gray text-center font-[500] mb-[0.5rem] md:mb-0">© ACCTAX 2019. ALL RIGHTS RESERVED.</p>
+          <div class="flex items-center justify-center">
+            <a aria-label="facebook icon link" href="#" class="icons fill-clr-gray">
+              <svg
+                xmlns="http://www.w3.org/2000/svg" 
+                height="1em" 
+                viewBox="0 0 320 512">
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+              </svg>
+            </a>
+            <a aria-label="twitter icon link" href="#" class="icons fill-clr-gray">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="1em" 
+                viewBox="0 0 512 512">
+                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+              </svg>
+            </a>
+            <a aria-label="linkedin icon link" href="#" class="icons fill-clr-gray">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="1em" 
+                viewBox="0 0 448 512">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+              </svg>
+            </a>
+            <a aria-label="google plus icon link" href="#" class="icons fill-clr-gray">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="1em" 
+                viewBox="0 0 640 512">
+                <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

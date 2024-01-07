@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  *{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+  }
+  *,
+  ::before,
+  ::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 93px;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-color: theme('colors.clr-white')
+  }
+  button{
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%
+  }
+  h2{
+    @apply xs:text-4xl xs:leading-[2.5rem] xl:text-5xl
+    text-3xl leading-[2rem] font-[700] 
+  }
+  h4{
+    @apply xs:text-base xl:text-lg
+    text-sm font-[500] mb-[0.3rem]
+  }
+  p{
+    @apply xs:text-base lg:max-w-[60ch] xl:text-lg
+    text-sm text-justify
+  }
+  a{
+    @apply decoration-[none];
+  } 
+}
+
+@layer utilities{
+  .container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .container-2{
+    max-width: 1440px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @apply lg:pl-[7rem] lg:pr-[7rem]
+  }
+  .bg-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .icons{
+    width: 1.5rem;
+    margin-left: 0.5rem;
+
+    @apply hover:scale-[1.5] hover:transition hover:duration-[0.3s]
+  }
+}
+
+@layer components{
+  .nav__menu{
+    color: theme('colors.clr-gray');
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 65%;
+    gap: 2rem;
+    background-color: white;
+    padding-top: 6rem;
+    padding-left: 1rem;
+    z-index: 999;
+    transition: 0.4s ease;
+
+    @apply lg:text-[0.7rem] lg:flex-row lg:items-center lg:justify-center lg:right-0
+      lg:pt-0 lg:pl-0 lg:w-[100%] lg:h-0 lg:relative lg:gap-[1.5rem]
+      xl:text-[1rem]
+  }
+  .nav__menu.active{
+    right: 0;
+  }
+  .nav__menu li:hover{
+    color: theme('colors.clr-primary-blue');
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+
+    @apply lg:text-[0.8rem] xl:text-[1.1rem]
+  }
+
+  .btn-1{
+    display: inline-block;
+    font-weight: 100;
+    letter-spacing: 0.03em;
+    padding: 0.8em 2.2em;
+  }
+  .btn-2{
+    color: theme('colors.clr-primary-blue');
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+  .card-1{
+    flex: 1;
+    font-weight: 500;
+    background-color: theme('colors.clr-white');
+    border-color: #ececec;
+    text-align: center;
+    cursor: pointer;
+    padding: 3rem;
+    transition: all 0.3s ease-in-out;
+
+    @apply hover:text-clr-white hover:bg-clr-primary-blue hover:shadow-[0px_20px_20px_#919191;]
+  }
+  .card-1:hover span{
+    @apply text-clr-white
+  }
+
+  .card-2{
+    font-weight: 500;
+    background-color: theme('colors.clr-primary-blue');
+    cursor: pointer;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+
+    @apply hover:text-clr-primary-blue hover:bg-clr-white hover:shadow-[0px_20px_20px_#000000] hover:scale-[1.1]
+  }
+  .card-2:hover.card-2::after{
+    @apply content-['\2192']
+  }
+  .icon-stroke,
+  .icon-fill{
+    @apply w-[2.5rem] h-[2.5rem] mb-[2rem]
+  }
+  .card-2:hover .icon-stroke{
+    @apply stroke-clr-primary-blue
+  }
+  .card-2:hover .icon-fill{
+    @apply fill-clr-primary-blue
+  }
+
+  .team__li::before{
+    @apply content-['\2714'] mr-[0.5rem] text-clr-light-blue
+  }
+  .quick_links_services li{
+    @apply text-clr-gray font-[500] mb-[0.5rem] cursor-pointer transition duration-[0.4s] ease-in-out
+    hover:text-clr-primary-blue hover:font-[600] hover:translate-x-6
+  } 
+}

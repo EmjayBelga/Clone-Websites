@@ -1,0 +1,104 @@
+.discount{
+    background-color: var(--clr-dark);
+    background-image: url(../images/Discount-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+.discount__content{
+    color: var(--clr-light);
+    text-align: center;
+}
+.discount__title{
+    font-size: var(--size-5xl);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.discount__description{
+    font-size: var(--size-base);
+}
+.discount__hashtag{
+    font-size: var(--size-5xl);
+    font-weight: 800;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.discount__btn{
+    background-color: var(--clr-yellow);
+    border: 1px solid var(--clr-yellow);
+    font-size: var(--size-xs);
+    text-transform: uppercase;
+    
+}
+.discount__btn:hover{
+    background-color: var(--clr-dark);
+    color: var(--clr-yellow);
+    border: 1px solid var(--clr-light);
+    transition: 0.3s;
+}
+
+
+/* lg */
+@media (max-width: 1024px) {
+    .discount__title{
+        font-size: var(--size-4xl);
+    }
+    .discount__description{
+        font-size: var(--size-sm);
+    }
+    .discount__hashtag{
+        font-size: var(--size-4xl);
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .discount__btn{
+        font-size: var(--size-btn);   
+    }
+       
+}
+
+/* md */
+@media (max-width: 768px) {
+    .discount__title{
+        font-size: var(--size-3xl);
+    }
+    .discount__description{
+        font-size: var(--size-xs);
+        max-width: 60ch;
+        margin: 0 auto;
+    }
+    .discount__hashtag{
+        font-size: var(--size-3xl);
+    }
+    .discount__btn{
+        font-size: var(--size-xxs);   
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .discount{
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+    .discount__title{
+        font-size: var(--size-3xl);
+    }
+    .discount__description{
+        font-size: var(--size-sm);
+    }
+    .discount__btn{
+        font-size: var(--size-btn);   
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .discount__title{
+        font-size: var(--size-4xl);
+    }
+}
+

@@ -1,0 +1,135 @@
+#team{
+    background-color: var(--clr-grey-bg);
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
+
+.team__content{
+    text-align: center;
+}
+.team__top-title{
+    font-size: var(--size-xl);
+}
+.team__title{
+    font-size: var(--size-5xl);
+    margin-bottom: 2.5rem;
+}
+
+.team__card-wrapper{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center; 
+}
+.team__card-content{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+.team__card-title{
+    color: var(--clr-grey-dark);
+    font-size: var(--size-xl);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+
+}
+.team__card-description{
+    color: var(--clr-grey);
+    font-size: var(--size-base);
+}
+
+.card:hover .team__card-title{
+    color: var(--clr-yellow);
+}
+
+
+/* xl */
+@media (max-width: 1280px) {
+    .team__card-description{
+        font-size: var(--size-sm);
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .team__top-title{
+        font-size: var(--size-lg);
+    }
+    .team__title{
+        font-size: var(--size-4xl);
+    }
+    
+    
+    .team__card-title{
+        font-size: var(--size-lg);
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .team__top-title{
+        font-size: var(--size-base);
+    }
+    .team__title{
+        font-size: var(--size-3xl);
+        margin-bottom: 2rem;
+    }
+    
+    .team__card-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem 4rem;   
+    }
+    .team__card{
+        width: 13.904375rem;
+    }
+    .team__card-title{
+        font-size: var(--size-base);
+    }
+    .team__card-description{
+        font-size: var(--size-xs);
+    }
+    
+}
+
+/* sm */
+@media (max-width: 640px) {
+    #team{
+        padding-top: 3.5em;
+        padding-bottom: 3.5em;
+    }
+    .team__top-title{
+        font-size: var(--size-lg);
+    }
+    .team__title{
+        font-size: var(--size-4xl);
+    }
+
+    .team__card{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .team__card-content{
+        padding: 1rem 0;
+    }
+    .team__card-title{
+        font-size: var(--size-xl);
+    }
+    .team__card-description{
+        font-size: var(--size-sm);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .team__top-title{
+        font-size: var(--size-base);
+    }
+    .team__title{
+        font-size: var(--size-3xl);
+    }
+
+    .team__card-title{
+        font-size: var(--size-lg);
+    }
+    
+}

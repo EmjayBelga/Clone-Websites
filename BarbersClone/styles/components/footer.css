@@ -1,0 +1,124 @@
+#footer__top-img{
+    background-color: var(--clr-light);
+    background-image: url(../images/Map-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 14.0625em;
+    padding-bottom: 14.0625em;
+}
+#footer{
+    background-color: var(--clr-dark);
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.footer__content{
+    text-align: center;
+}
+.footer__title{
+    font-size: var(--size-4xl);
+    margin-bottom: 0.5rem;
+}
+.footer__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__nav-link{
+    color: var(--clr-grey);
+    font-size: var(--size-xs);
+}
+.footer__nav-link:hover{
+    color: var(--clr-yellow);
+    transition: 0.3s;
+    text-shadow: 0 0 15px var(--clr-yellow);
+}
+.footer__icon-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer__icon-link{
+    color: var(--clr-yellow);
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+.footer__icon-link:hover{
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
+.footer__icon{
+    width: var(--size-sm);
+    height: var(--size-sm);
+}
+.footer__description{
+    color: var(--clr-grey);
+    font-size: var(--size-xs);
+}
+
+
+/* xl */
+@media (max-width: 1280px) {
+    .footer__title{
+        font-size: var(--size-3xl);
+    }
+    .footer__nav{
+        gap: 1.5rem;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .footer__title{
+        font-size: var(--size-2xl);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    #footer__top-img{
+        padding-top: 13.5em;
+        padding-bottom: 13.5em;
+    }
+    .footer__title{
+        font-size: var(--size-xl);
+        margin-bottom: 0.2rem;
+    }
+    .footer__nav{
+        gap: 1rem;
+    }
+    .footer__nav-link{
+        font-size: var(--size-xxs);
+    }
+    .footer__icon{
+        width: var(--size-xs);
+        height: var(--size-xs);
+    }
+    .footer__icon-content{
+        gap: 1rem;
+    }
+    .footer__icon-link{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .footer__description{
+        color: var(--clr-grey);
+        font-size: var(--size-xxs);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    #footer{
+        padding-top: 2.5em;
+        padding-bottom: 1.5em;
+    }
+    .footer__title{
+        font-size: var(--size-3xl);
+    }
+    .footer__nav{
+        gap: 0.5rem;
+    }   
+}
